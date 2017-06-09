@@ -2,7 +2,7 @@ import time
 from selenium import webdriver
 #com
 
-web = webdriver.Chrome()
+web = webdriver.Chrome('driver/chromedriver')
 web.get("https://web.whatsapp.com/")
 
 
