@@ -6,8 +6,10 @@ from wa import Whtsapp
 import os
 
 
-target = ["Gp", "mnisha","rocky","saran jio"]
-
+#target = ["mnisha","saran"]
+target = raw_input('enter contacts \",\" seperated  :')
+target = Whtsapp().cleanlist(target)       
+print target
 
 while (Whtsapp().loggedin()==False):
         Whtsapp().loggedin()
@@ -15,5 +17,5 @@ while (Whtsapp().loggedin()==False):
 while True:
         os.system("clear")
         for i in range(len(target)):
-                status = Whtsapp().checkstatus(target[i],0)
-                print " %s ==========> %s " %(target[i],status)
+                status, contact = Whtsapp().checkstatus(target[i],0)
+                print " %s      ==> %s  ==> %s " %(target[i], contact, status)

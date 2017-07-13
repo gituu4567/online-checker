@@ -1,52 +1,77 @@
 import time
 from selenium import webdriver
-import os
 from selenium.webdriver.common.keys import Keys
-
+import os
 
 web = webdriver.Chrome('driver/chromedriver')  # f*** these difference bw file finding while both are in same folder
 #web = webdriver.Firefox('./driver') #still it uses the geckodriver in root folder not the specified driver folder
+web.implicitly_wait(10) # seconds # http://docs.seleniumhq.org/docs/04_webdriver_advanced.jsp#implicit-waits
 web.get("https://web.whatsapp.com/")
 web.maximize_window()
 
 
     
 class Whtsapp:
+
+
     def __init__(self):
         pass
+
+    def cleanlist(self,x):
+        List = x.split(",")
+        for i in reversed(range(len(List))): # reversing index due to error on index traversal when elements are poped out results in change in overall as well as each element index after it is poped, sol: take element from end of list
+            if List[i] == "":
+                List.pop(i)
+            else:
+                List[i] = List[i].strip().lower()
+            
+        return List 
     
     def loggedin(self):
         try:
             elem1 = web.find_element_by_xpath('//*[@id="side"]/header/div[2]/div/span/div[1]/button')  # contact button
             elem1.click()  # click contacts button
-            time.sleep(2)
+            #time.sleep(2)
             web.find_element_by_xpath('//*[@id="app"]/div/div/div[1]/span[1]/div/span/div/header/div/div/span').click() # back-button
             return True
         except:
             return False
 
-    def checkstatus(self, t, sleeptime):
-        #import ipdb;ipdb.set_trace()
-        assert (t.strip != True)# "contact name is blank"
-        try:
-            web.find_element_by_xpath('//*[@id="side"]/header/div[2]/div/span/div[1]/button').click()  # contact button
-            elem2 = web.find_element_by_xpath('//*[@id="app"]/div/div/div[1]/span[1]/div/span/div/div[1]/div/label/input')  # find search box
-            elem2.clear() # TODO improve finding contact by pressing send key with target name
-            elem2.send_keys(t)  # send contact name to search box
-            elem2.send_keys(Keys.RETURN)
-            #old = """web.find_element_by_xpath('//span[contains(text(),"targetname")]').click()"""  # advNCED matching
-            #new = old.replace("targetname", t)
-            #exec new
-            time.sleep(sleeptime)
-            elem6 = web.find_element_by_xpath('//*[@id="main"]/header/div[2]/div[2]/span')
-            status = elem6.text
-            return status
 
+    def checkstatus(self, t, sleeptime):                             # TODO if an invalid contact i.e which do not exist in your contact is tried it return the status of last tried contact i.e it do nothing & dont know that contact is invalid
+        #import ipdb;ipdb.set_trace()
+        assert t != "", "Blank input found"# "contact name is blank"
+        try:
+            while True:
+                #web.find_element_by_xpath('//*[@id="side"]/header/div[2]/div/span/div[1]/button').click()  #in case you uncomment this uncomment the next line too and comment the third
+                #elem2 = web.find_element_by_xpath('//*[@id="app"]/div/div/div[1]/span[1]/div/span/div/div[1]/div/label/input')  # find search box1
+                elem2 = web.find_element_by_xpath('//*[@id="side"]/div[2]/div/label/input') # alternate search box 2
+                elem2.clear() # TODO improve finding contact by pressing send key with target name
+                elem2.send_keys(t)  # send contact name to search box
+                elem2.send_keys(Keys.RETURN)
+                #old = """web.find_element_by_xpath('//span[contains(text(),"targetname")]').click()"""  # advNCED matching
+                #new = old.replace("targetname", t)
+                #exec new
+                #time.sleep(sleeptime) #TODO find a way to wait until element loaded than to explicitily wait
+                elem6 = web.find_element_by_xpath('//*[@id="main"]/header/div[2]/div[2]/span')
+                status = elem6.text
+                
+                if status == "click here for contact info":
+                    continue
+                elem3 = web.find_element_by_xpath('//*[@id="main"]/header/div[2]/div[1]/h2/span')
+                if elem3.text.lower().find(t) > -1: # finding contact name is same as input target
+                    return status, elem3.text
+                    break
+                else:
+                    return "unknown contact", "blah blah"
+                    break
+                    
                 
         except Exception as e:
-            return "Hidden**"
+            return "*Hidden*"
             try: web.find_element_by_xpath('//*[@id="app"]/div/div/div[1]/span[1]/div/span/div/header/div/div/span').click()
             except: pass
+
 
     def online(self, t):
         try:
@@ -56,22 +81,23 @@ class Whtsapp:
         except Exception as e:
             print e
 
-    def spam(self, t, msg, loop):
+
+    def spam(self, t, msg, loop):  #TODO ALOT copy correction from checkstatus :)
         for i in range(loop):
             try:
                 elem1 = web.find_element_by_xpath('//*[@id="side"]/header/div[2]/div/span/div[1]/button')  # contact button
                 elem1.click()  # click contacts button
-                time.sleep(2)
+                #time.sleep(2)
 
                 elem2 = web.find_element_by_xpath('//*[@id="app"]/div/div/div[1]/span[1]/div/span/div/div[1]/div/label/input')  # find search box
                 elem2.send_keys(t)  # send contact name to search box
-                time.sleep(2)
+                #time.sleep(2)
 
                 old = """web.find_element_by_xpath('//span[contains(text(),"targetname")]').click()"""  # advNCED matching
                 new = old.replace("targetname", t)
 
                 exec new
-                time.sleep(2)
+                #time.sleep(2)
 
                 elem3 = web.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]')  # message box
                 elem3.send_keys(msg)  # sending valid message
