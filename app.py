@@ -17,5 +17,5 @@ while (Whtsapp().loggedin()==False):
 while True:
         os.system("clear")
         for i in range(len(target)):
-                status, contact = Whtsapp().checkstatus(target[i],0)
+                contact, status = Whtsapp().checkstatus(target[i],0)
                 print " %s      ==> %s  ==> %s " %(target[i], contact, status)

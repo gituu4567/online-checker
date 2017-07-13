@@ -60,7 +60,7 @@ class Whtsapp:
                     continue
                 elem3 = web.find_element_by_xpath('//*[@id="main"]/header/div[2]/div[1]/h2/span')
                 if elem3.text.lower().find(t) > -1: # finding contact name is same as input target
-                    return status, elem3.text
+                    return elem3.text, status
                     break
                 else:
                     return "unknown contact", "blah blah"
