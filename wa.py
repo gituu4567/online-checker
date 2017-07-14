@@ -1,29 +1,38 @@
 import time
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-import os
 
-web = webdriver.Chrome('driver/chromedriver')  # f*** these difference bw file finding while both are in same folder
-#web = webdriver.Firefox('./driver') #still it uses the geckodriver in root folder not the specified driver folder
-web.implicitly_wait(5) # seconds # http://docs.seleniumhq.org/docs/04_webdriver_advanced.jsp#implicit-waits
-web.get("https://web.whatsapp.com/")
-web.maximize_window()
+from selenium.webdriver.common.keys import Keys
+import sys
+import pickle
 
 
     
-class Whtsapp:
+class whatsapp:
 
-
-    def __init__(self):
-        pass
+    def start(self):
+        try:
+            from selenium import webdriver
+            global webdriver
+            webdriver = webdriver.Chrome('driver/chromedriver')  # f*** these difference bw file finding while both are in same folder
+            #webdriver = webdriver.Firefox('./driver') #still it uses the geckodriver in root folder not the specified driver folder
+            webdriver.implicitly_wait(5) # seconds # http://docs.seleniumhq.org/docs/04_webdriver_advanced.jsp#implicit-waits
+            webdriver.get("https://web.whatsapp.com/")
+            cookies = pickle.load(open("cookies.pkl", "rb"))
+            for cookie in cookies:
+                webdriver.add_cookie(cookie)
+                
+            webdriver.maximize_window()
+            return True
+        except Exception as e:
+            print e
+            return False
 
     def search(self, t):
         try:
-            elem2 = web.find_element_by_xpath('//*[@id="side"]/div[2]/div/label/input') # alternate search box 2
-            elem2.clear() # TODO improve finding contact by pressing send key with target name
+            elem2 = webdriver.find_element_by_xpath('//*[@id="side"]/div[2]/div/label/input') # alternate search box 2
+            elem2.clear() # clr field
             elem2.send_keys(t)  # send contact name to search box
-            elem2.send_keys(Keys.RETURN)
-            elem3 = web.find_element_by_xpath('//*[@id="main"]/header/div[2]/div[1]/h2/span')
+            elem2.send_keys(Keys.RETURN) # press Enter
+            elem3 = webdriver.find_element_by_xpath('//*[@id="main"]/header/div[2]/div[1]/h2/span')
             if elem3.text.lower().find(t.lower()) > -1:             # finding contact name is same as input target
                 return True
             else: return False
@@ -32,11 +41,10 @@ class Whtsapp:
             return False
             
     def sendmsg(self,msg):
-                elem3 = web.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]')  # message box
-                elem3.send_keys(msg)  # sending valid message
+                msgbox = webdriver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]')  # message box
+                msgbox.send_keys(msg)  # sending valid message
                 try:
-                    elem4 = web.find_element_by_xpath('//*[@id="main"]/footer/div[1]/button')  # send key only appears when message is valid
-                    elem4.click()  # press send
+                    msgbox.send_keys(Keys.RETURN)
                     return True
                 except:
                      print "Blank msg error"
@@ -54,41 +62,56 @@ class Whtsapp:
     
     def loggedin(self):
         try:
-            loginelem = web.find_element_by_xpath('//*[@id="window"]/div[1]/div[2]/div[2]')
+            loginelem = webdriver.find_element_by_xpath('//*[@id="window"]/div[1]/div[2]/div[2]')
             if loginelem.text == "Use WhatsApp on your phone to scan the code":
                 return False
             else: return True
         
-        except:
+        except NameError as e:
+            print "webdriver not started."
+            return False
+    
+    def logout(self):
+        try:
+            settingbtn = webdriver.find_element_by_xpath('//*[@id="side"]/header/div[2]/div/span/div[2]/button')
+            settingbtn.click()
+            logoutbtn = webdriver.find_element_by_xpath('//*[@id="side"]/header/div[2]/div/span/div[2]/span/div/ul/li[6]/a')
+            logoutbtn.click()
             return True
-
-
-    def checkstatus(self, t):
+        except Exception as e:
+            print e
+            return False
+            
+        
+    def lastseen(self, t):
         #import ipdb;ipdb.set_trace()
         assert t != "", "Blank input found"                     # "contact name is blank"
         try:
             while True:
-                Whtsapp().search(t)
+                whatsapp().search(t)
                 try:
-                    elem6 = web.find_element_by_xpath('//*[@id="main"]/header/div[2]/div[2]/span')
+                    elem6 = webdriver.find_element_by_xpath('//*[@id="main"]/header/div[2]/div[2]/span')
                     status = elem6.text
                     
                     if status == "click here for contact info":
                         continue
                     
-                    elem3 = web.find_element_by_xpath('//*[@id="main"]/header/div[2]/div[1]/h2/span')
+                    elem3 = webdriver.find_element_by_xpath('//*[@id="main"]/header/div[2]/div[1]/h2/span')
                     if elem3.text.lower().find(t.lower()) > -1:             # finding contact name is same as input target
                         return elem3.text, status
                         break
                     else:
                         return t, "unknown contact"
                         break
-                except: return t, "hidden"
-        except: return "error","error"
+                except: 
+                    return t, "hidden"
+        except KeyboardInterrupt:
+            sys.exit()
+        except: return t,"error"
         
     def online(self, t):
         try:
-            if (Whtsapp().checkstatus(t))[1] == "online":
+            if (whatsapp().lastseen(t))[1] == "online":
                 return True
             else: return False
         except Exception as e:
@@ -96,12 +119,57 @@ class Whtsapp:
             return False
 
 
-    def spam(self, x, msg, loop):                                       #TODO ALOT copy correction from checkstatus :)
-        if Whtsapp().search(x):
+    def spam(self, x, msg, loop):               #looper program in short
+        if whatsapp().search(x):
             for i in range(loop):
-                if Whtsapp().sendmsg(msg) !=True:
+                if whatsapp().sendmsg(msg) !=True:
                     return False
         else: return False       
-        return True        
+        return True
+        
+    def getcookie(self):
+        global data
+        try:
+            data = (webdriver.execute_script("""
+
+var key = [] ;
+var value = [] ;
+var data = [] ;
+
+for ( var i = 0, len = localStorage.length; i < len; ++i ) 
+{
+key[i] = localStorage.key(i) ;
+value[i] = localStorage.getItem(localStorage.key(i)) ;
+
+}
+data[0] = key;
+data[1] = value;
+return data ;
+
+"""))
+
+        except Exception as e:
+            print e
+        for i in range(len(data[0])):
+            print "Got local storage for", data[0][i],"=====",data[1][i]
+        
+    def postcookie(self): 
+        try:
+            for i in range(len(data[0])):
+                webdriver.execute_script("""localStorage.setItem('%s','%s');""" %(data[0][i], data[1][i]) )
+                print "injecting... local storage for ", data[0][i],"=====>", data[1][i]
+            return True
+        except Exception as e:
+            print "injecting failed for", data[0][i],"=====>", data[1][0], "due to", e
+            return False
+        
+        
+if __name__ == '__main__':
+    print "Started as program"
+    whatsapp().start()
+    
+else:
+    print "Started as module : please pass wa.whatsapp().start()"
+        
                     
                             
