@@ -24,7 +24,7 @@ class whatsapp:
             global webdriver
             webdriver = webdriver.Chrome('driver/chromedriver')     # f*** these difference bw file finding while both are in same folder
             #webdriver = webdriver.Firefox('./driver')              #still it uses the geckodriver in root folder not the specified driver folder
-            webdriver.implicitly_wait(5)                             # seconds # http://docs.seleniumhq.org/docs/04_webdriver_advanced.jsp#implicit-waits
+            webdriver.implicitly_wait(0)                             # seconds # http://docs.seleniumhq.org/docs/04_webdriver_advanced.jsp#implicit-waits
             webdriver.get("https://web.whatsapp.com/")
             webdriver.maximize_window()
             return True
