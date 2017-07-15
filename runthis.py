@@ -1,4 +1,3 @@
-
 # *****************************************************
 # whatsapp scripting v1.0
 # Author:
@@ -6,11 +5,11 @@
 # https://github.com/parwinders
 # 3oth march 2017 
 # *****************************************************
-
+import numpy
 import os;os.system("cls")
 import wa
 import sys
-#import ipdb;ipdb.set_trace()
+import ipdb;ipdb.set_trace()
 
 
 wa.whatsapp().start()
@@ -24,13 +23,29 @@ try:
     print target
 
     while (wa.whatsapp().loggedin()==False):
-            wa.whatsapp().loggedin()
-            
+            wa.whatsapp().loggedin()        
     while True:
+        try:
+            
+            data0 = []
+            data1 = []
             for i in range(len(target)):
-                    contact, status = wa.whatsapp().lastseen(target[i])
-                    print "\n%s      ==> %s  ==> %s " %(target[i], contact, status)
-
+                contact, status = wa.whatsapp().lastseen(target[i])
+                print "\n%s      ==> %s  ==> %s " %(target[i], contact, status)
+                data0.append(contact)
+                data1.append(status)
+            
+        except Exception as e:
+            print e
+                    
+        with open('database.txt', 'wb') as f:
+            for i in range(len(target)):
+                f.write('%s:%s\n' %(data0[i], data1[i] ))
+                
+        
+        
+        
+        
 except KeyboardInterrupt:
     print "\nbye"
     wa.webdriver.quit()
