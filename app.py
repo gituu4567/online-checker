@@ -7,11 +7,15 @@
 # 3oth march 2017 
 # *****************************************************
 
+import os;os.system("cls")
 import wa
-import os
 import sys
+#import ipdb;ipdb.set_trace()
+
 
 wa.whatsapp().start()
+wa.whatsapp().load()
+wa.whatsapp().postcookie()
 
 try:
     target = "mnisha,saran"
@@ -25,9 +29,9 @@ try:
     while True:
             for i in range(len(target)):
                     contact, status = wa.whatsapp().lastseen(target[i])
-                    print " %s      ==> %s  ==> %s " %(target[i], contact, status)
+                    print "\n%s      ==> %s  ==> %s " %(target[i], contact, status)
 
-except:
-    wa.whatsapp().logout()
+except KeyboardInterrupt:
+    print "\nbye"
     wa.webdriver.quit()
-    print "bye1"
+    sys.exit(0)
