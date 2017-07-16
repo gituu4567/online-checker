@@ -8,8 +8,10 @@
 import os;os.system("cls")
 import wa
 import sys
-#import ipdb;ipdb.set_trace()
+import ipdb;ipdb.set_trace()
 import time
+import datetime
+#import winsound
 
 
 wa.whatsapp().start()
@@ -30,10 +32,11 @@ try:
         for z in f:
             loop1+=1
                     
-    timespent =[[0 for j in range(0)] for i in range(loop1)]        
+    timespent =[[0 for j in range(0)] for i in range(loop1)]
+    lastseentime =[[0 for j in range(0)] for i in range(loop1)]
     
     while True:
-        tick0 = time.clock()
+        tick0 = time.time()
         try:
             
             data0 = []
@@ -51,6 +54,9 @@ try:
                         try:
                             for i in range(delay):
                                 timespent[loop2].append(1)
+                                lastseentime[loop2].append(time.asctime())
+                                #notification coding here
+                                winsound.PlaySound('sound.wav', winsound.SND_FILENAME)
                             
                         except NameError:
                             for i in range(loop1):
@@ -58,16 +64,18 @@ try:
                     else:
                         try:
                             for i in range(delay):
-                                timespent[loop2].append(0)
+                                #timespent[loop2].append(0)
+                                timespent[loop2] = []
                             print "\ncorrecting time" 
                             
                         except NameError:
                             for i in range(loop1):
-                                timespent[loop2].append(0)
+                                #timespent[loop2].append(0)
+                                timespent[loop2] = []
                         
-                    print "\n%s      ==> %s  ==> %s " %(target, contact, status)
                     spotted = timespent[loop2].count(1)
-                    print spotted
+                    spotted = str(datetime.timedelta(seconds=spotted))
+                    print "\n%s  ==> %s  ==> %s for %s seconds " %(target, contact, status,spotted)
                     loop2+=1
 
             
@@ -80,7 +88,7 @@ try:
             for i in range(len(data0)):
                 f.write('%s:%s:%s\n' %(data0[i], data1[i],timespent[i].count(1) ))
         
-        tick1 = time.clock()
+        tick1 = time.time()
         delay = int(tick1-tick0)
         print "\n",'database is updated in',delay,"/secs",'for',len(data0),"Users"
                 
