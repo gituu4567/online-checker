@@ -9,7 +9,6 @@
 import os;os.system("cls")
 import wa
 import sys
-import ipdb;ipdb.set_trace()
 import time
 import datetime
 import winsound
@@ -31,6 +30,7 @@ wa.whatsapp().start()
 wa.whatsapp().load()
 wa.whatsapp().postcookie()
 
+import ipdb;ipdb.set_trace()
 
 with codecs.open('database.txt', 'w','utf-8') as f:  # initializing database to empty 
     pass
@@ -46,7 +46,7 @@ try:
         
         with codecs.open('database.txt','a','utf-8') as file:
             name = name.rstrip()
-            fakedata = ('%s\n:none:offline:none\n' %(name))
+            fakedata = ('%s:none:offline:none\n' %(name))
             file.write(fakedata)
         targetcount+=1    
                     
@@ -140,5 +140,6 @@ try:
 
 except KeyboardInterrupt:
     print "\nbye"
+finally:    
     wa.webdriver.quit()
     sys.exit(0)
