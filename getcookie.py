@@ -1,14 +1,16 @@
-from wa import whatsapp
+import wa
 import sys
 
-whatsapp().start()
+print "\n\n\npls login then dump cookie"
+
+wa.whatsapp().start()
 
 print "\nscan QR code"
 while True:
-	raw_input("\n\n\nReady to dump cookie? PRESS Enter")
-	if whatsapp().getcookie():
+	raw_input("\nReady to dump cookie? PRESS Enter")
+	if wa.whatsapp().getcookie():
 		print"got cookie "
-		if whatsapp().dump():
+		if wa.whatsapp().dump():
 			print "dump success"
 			break
 		else: print " dump failed"	
@@ -16,4 +18,4 @@ while True:
 		print"error getting cookie"
 		
 wa.webdriver.quit()
-sys.exit(0)
+quit()
