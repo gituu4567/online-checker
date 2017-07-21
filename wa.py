@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import os
 import pickle
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
@@ -18,15 +19,18 @@ class whatsapp:
     def start(self):
         try:
             from selenium import webdriver
-
             global webdriver
-            # Linux specific code here
-            # webdriver = webdriver.Chrome('./driverlinux/chromedriver')
-
-            # windows specific
-            webdriver = webdriver.Chrome('driver/chromedriver')  # f*** these difference bw file finding while both are in same folder
-            # webdriver = webdriver.Firefox('./driver')              #still it uses the geckodriver in root folder not the specified driver folder
-            webdriver.implicitly_wait(0)  # seconds # http://docs.seleniumhq.org/docs/04_webdriver_advanced.jsp#implicit-waits
+	    if os.name=="posix":
+            	# Linux specific code here
+            	webdriver = webdriver.Chrome('./driverlinux/chromedriver')
+            else:
+            	# windows specific
+            	webdriver = webdriver.Chrome('driver/chromedriver')  
+                # f*** these difference bw file finding while both are in same folder
+            	# webdriver = webdriver.Firefox('./driver')  # still it uses the geckodriver in root folder not the specified driver folder
+            
+            webdriver.implicitly_wait(0)  
+            # seconds # http://docs.seleniumhq.org/docs/04_webdriver_advanced.jsp#implicit-waits
             webdriver.get("https://web.whatsapp.com/")
             #webdriver.maximize_window()
             return True
@@ -41,6 +45,7 @@ class whatsapp:
 
     def search(self, t):
         try:
+            t = str(t)
             elem2 = webdriver.find_element_by_xpath('//*[@id="side"]/div[2]/div/label/input')  # alternate search box 2
             elem2.clear()  # clr field
             elem2.send_keys(t)  # send contact name to search box
@@ -55,6 +60,7 @@ class whatsapp:
             return False
 
     def sendmsg(self, msg):
+        msg = str(msg)
         msgbox = webdriver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]')  # message box
         msgbox.send_keys(msg)  # sending valid message
         try:
@@ -77,6 +83,7 @@ class whatsapp:
             return False
 
     def verify(self,t):
+        t =str(t)
         try:
             elem1 = webdriver.find_element_by_xpath('//*[@id="main"]/header/div[2]/div[1]/h2/span')
             if elem1.text.lower().find(t.lower()) > -1:
@@ -88,8 +95,9 @@ class whatsapp:
 
 
     def lastseen(self, t):
+        t = str(t)
         assert t != "", "Blank input found"
-        if whatsapp().verify(t)==False:
+        if whatsapp().verify(str(t))==False:
             whatsapp().search(t)
         try:
             while True:
@@ -102,21 +110,24 @@ class whatsapp:
                         continue
 
                     elem3 = webdriver.find_element_by_xpath('//*[@id="main"]/header/div[2]/div[1]/h2/span')
-                    if elem3.text.lower().find(t.lower()) > -1:  # finding contact name is same as input target
+                    if elem3.text.lower().find(t[0:5].lower()) > -1:  # finding contact name is same as input target
                         return elem3.text, status
                         break
                     else:
+                        print t[1:6].lower(), "compared to",elem3.text.lower(),"failed" 
                         return t, "unknown contact"
                         break
-                except:
+                except Exception as e :
+                    print e
                     return t, "hidden"
         except KeyboardInterrupt as e:
-            print "\nraised keyboard error"
+            print "\n keyboard interrupt raised"
             raise e
         except:
             return t, "error"
 
     def online(self, t):
+        t = str(t)
         try:
             if whatsapp().lastseen(t)[1]=="online" or whatsapp().lastseen(t)[1]=="typing":
                 return True
@@ -185,6 +196,21 @@ return data ;
         with open('cookies.pkl', 'rb') as f:
             data = pickle.load(f)
         return True
+
+    def waitingpeople(self):
+        global waiting
+        waiting = webdriver.find_elements_by_class_name("unread")
+        return len(data)
+
+    def autopilot(self):
+        for i in range(whatsapp().waitingpeople()):
+            if waiting:
+                try:
+                    waiting[i].click()
+                    whatsapp().sendmsg("Master is busy , try Calling if its Urgent... next Available at 10:30 afterwards  ")
+                except:
+                    pass
+
 
 
 if __name__ == '__main__':  # differentiate between running as main or module
