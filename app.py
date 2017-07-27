@@ -91,7 +91,7 @@ while True:
         start()
 
     while True:
-    	wa.whatsapp().autopilot()
+    	#wa.whatsapp().autopilot()
         starttime = time.time()
         try:
 
@@ -131,7 +131,8 @@ while True:
                             lastseentime[x].append(time.asctime())
 
                     spotted = timespent[x].count(1)
-                    spotted = str(datetime.timedelta(seconds=spotted))  # seconds to standard elapsed time HH:mm:ss
+                    spotted = str(datetime.timedelta(seconds=spotted))  
+                    # seconds to standard elapsed time HH:mm:ss
                     # print "%s  => %s  ==> %s for %s seconds " %(target, contact, status, spotted)
                     # print totalonline[x]
                     print "%s=>	%s ==> %s for %s seconds " % (target, contact, status, spotted)
