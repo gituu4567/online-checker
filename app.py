@@ -13,6 +13,7 @@ import wa
 import sys
 import time
 import datetime
+from threading import Thread
 
 if os.name == 'nt':
     import winsound
@@ -52,6 +53,17 @@ def gettargetcount():
             book.pop(line)
     targetcount = len(book)
     return targetcount
+
+class gitdata(Thread):
+    def run(self):
+        os.system("git add database.txt")
+        os.system("git commit -m 'test2'")
+        os.system("git push")
+
+def run(self):
+    os.system("git add database.txt")
+    os.system("git commit -m 'test2'")
+    os.system("git push")             
 
 
 def start():
@@ -182,5 +194,8 @@ while True:
         endtime = time.time()
         timetaken = int(endtime - starttime)
         print "\n", 'database is updated in', timetaken, "/secs", 'for', len(targetnamelist), "Users"
+        #threading here
+        #gitdata().start()
+        run()
 
   	break
