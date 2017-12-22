@@ -1,3 +1,4 @@
+#!c:\python27\python
 import wa
 import sys
 

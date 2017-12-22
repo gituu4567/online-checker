@@ -1,0 +1,362 @@
+1513877876105	geckodriver	INFO	Listening on 127.0.0.1:39471
+1513877877081	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.ABdCtFIsHv3I
+1513877877087	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1513877877103	geckodriver::marionette	INFO	Connecting to Marionette on localhost:43388
+1513877880695	Marionette	INFO	Enabled via --marionette
+1513877890949	Marionette	INFO	Listening on port 43388
+1513877892010	Marionette	DEBUG	Register listener.js for window 2147483649
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1513878468096	geckodriver	INFO	Listening on 127.0.0.1:33440
+1513878469075	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.ELhu9ms0bgYL
+1513878469080	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1513878469102	geckodriver::marionette	INFO	Connecting to Marionette on localhost:32930
+1513878472626	Marionette	INFO	Enabled via --marionette
+1513878482025	Marionette	INFO	Listening on port 32930
+1513878482678	Marionette	DEBUG	Register listener.js for window 2147483649
+1513878657124	geckodriver	INFO	Listening on 127.0.0.1:34067
+1513878658107	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.iBfiSipjKZgo
+1513878658112	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1513878658125	geckodriver::marionette	INFO	Connecting to Marionette on localhost:34849
+1513878661307	Marionette	INFO	Enabled via --marionette
+1513878670323	Marionette	INFO	Listening on port 34849
+1513878671020	Marionette	DEBUG	Register listener.js for window 2147483649
+1513878839216	geckodriver	INFO	Listening on 127.0.0.1:52721
+1513878840197	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.E6AEaZCsB6wn
+1513878840201	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1513878840224	geckodriver::marionette	INFO	Connecting to Marionette on localhost:39836
+1513878844278	Marionette	INFO	Enabled via --marionette
+1513878858983	Marionette	INFO	Listening on port 39836
+1513878860134	Marionette	DEBUG	Register listener.js for window 2147483649
+1513879472571	geckodriver	INFO	Listening on 127.0.0.1:33797
+1513879473566	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.qCGeu5RZTKUO
+1513879473570	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1513879473577	geckodriver::marionette	INFO	Connecting to Marionette on localhost:39653
+1513879476923	Marionette	INFO	Enabled via --marionette
+1513879488575	Marionette	INFO	Listening on port 39653
+1513879489291	Marionette	DEBUG	Register listener.js for window 2147483649
+1513879761967	geckodriver	INFO	Listening on 127.0.0.1:50636
+1513879762955	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.OF19J0wQ9M02
+1513879762960	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1513879762976	geckodriver::marionette	INFO	Connecting to Marionette on localhost:41782
+1513879766343	Marionette	INFO	Enabled via --marionette
+1513879775982	Marionette	INFO	Listening on port 41782
+1513879776775	Marionette	DEBUG	Register listener.js for window 2147483649
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1513881258814	geckodriver	INFO	Listening on 127.0.0.1:43201
+1513881259857	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1513881269043	Marionette	INFO	Enabled via --marionette
+1513881281590	Marionette	INFO	Listening on port 41442
+1513881281758	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513881282239	Marionette	DEBUG	Register listener.js for window 2147483649
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1513881318340	geckodriver	INFO	Listening on 127.0.0.1:55777
+1513881319342	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1513881322780	Marionette	INFO	Enabled via --marionette
+1513881334478	Marionette	INFO	Listening on port 34027
+1513881334658	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513881335288	Marionette	DEBUG	Register listener.js for window 2147483649
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1513881439048	geckodriver	INFO	Listening on 127.0.0.1:45659
+1513881440045	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1513881443756	Marionette	INFO	Enabled via --marionette
+1513881456451	Marionette	INFO	Listening on port 36215
+1513881456604	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513881457251	Marionette	DEBUG	Register listener.js for window 2147483649
+1513881457555	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513881458606	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513881458610	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513881460091	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+1513881501953	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+1513881814355	geckodriver	INFO	Listening on 127.0.0.1:47277
+1513881815358	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1513881818877	Marionette	INFO	Enabled via --marionette
+1513881831757	Marionette	INFO	Listening on port 38139
+1513881832067	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513881832773	Marionette	DEBUG	Register listener.js for window 2147483649
+1513881833270	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513881834243	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513881834249	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513881835598	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+1513881873617	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+[Child 3715, Chrome_ChildThread] WARNING: pipe error (35): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 3715, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 3715, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513881999956	geckodriver	INFO	Listening on 127.0.0.1:56461
+1513882000960	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1513882004210	Marionette	INFO	Enabled via --marionette
+1513882015391	Marionette	INFO	Listening on port 34885
+1513882015564	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513882016034	Marionette	DEBUG	Register listener.js for window 2147483649
+1513882016276	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513882017397	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513882017406	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513882018788	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+1513882056881	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+[Child 4287, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 4287, Chrome_ChildThread] WARNING: pipe error (35): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 4287, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513882106789	geckodriver	INFO	Listening on 127.0.0.1:54638
+1513882107794	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1513882111019	Marionette	INFO	Enabled via --marionette
+1513882123219	Marionette	INFO	Listening on port 44245
+1513882123409	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513882123941	Marionette	DEBUG	Register listener.js for window 2147483649
+1513882124245	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513882125345	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513882125347	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513882126542	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+1513882162328	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+1513882199518	geckodriver	INFO	Listening on 127.0.0.1:57635
+1513882200392	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1513882207565	Marionette	INFO	Enabled via --marionette
+1513882222772	Marionette	INFO	Listening on port 33652
+1513882223161	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513882223729	Marionette	DEBUG	Register listener.js for window 2147483649
+1513882224053	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513882225854	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513882225874	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513882227986	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+1513882290234	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+1513882293480	Marionette	DEBUG	Received DOM event "beforeunload" for "https://web.whatsapp.com/"
+1513882295360	Marionette	DEBUG	Received DOM event "pagehide" for "https://web.whatsapp.com/"
+1513882295386	Marionette	DEBUG	Received DOM event "unload" for "https://web.whatsapp.com/"
+1513882296866	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+1513882326195	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+JavaScript error: , line 0: uncaught exception: No ServiceWorker controlling this client.
+JavaScript error: , line 0: uncaught exception: No ServiceWorker controlling this client.
+1513920883288	geckodriver	INFO	Listening on 127.0.0.1:45384
+1513920884266	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1513920894286	Marionette	INFO	Enabled via --marionette
+1513920918325	Marionette	INFO	Listening on port 45813
+1513920918586	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://shield-recipe-client/lib/NormandyApi.jsm, line 60: TypeError:  is not a valid URL.
+1513920919194	Marionette	DEBUG	Register listener.js for window 2147483649
+1513920919822	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513920920838	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513920920854	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513920923367	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+1513920977171	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+1513920979898	Marionette	DEBUG	Received DOM event "beforeunload" for "https://web.whatsapp.com/"
+1513920981400	Marionette	DEBUG	Received DOM event "pagehide" for "https://web.whatsapp.com/"
+1513920981414	Marionette	DEBUG	Received DOM event "unload" for "https://web.whatsapp.com/"
+1513920983717	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+1513921012423	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+JavaScript error: , line 0: uncaught exception: No ServiceWorker controlling this client.
+JavaScript error: , line 0: uncaught exception: No ServiceWorker controlling this client.
+[Child 2594, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513921210518	geckodriver	INFO	Listening on 127.0.0.1:50906
+1513921211500	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1513921215998	Marionette	INFO	Enabled via --marionette
+1513921229405	Marionette	INFO	Listening on port 35550
+1513921230416	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513921231276	Marionette	DEBUG	Register listener.js for window 2147483649
+1513921463643	Marionette	DEBUG	Register listener.js for window 4294967297
+1513921463933	Marionette	DEBUG	Register listener.js for window 4294967299
+1513921470913	Marionette	DEBUG	Register listener.js for window 4294967303
+1513921472450	Marionette	DEBUG	Register listener.js for window 4294967306
+1513904832897	geckodriver	INFO	Listening on 127.0.0.1:49141
+1513904833866	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+Error: GDK_BACKEND does not match available displays
+1513905007093	geckodriver	INFO	Listening on 127.0.0.1:43928
+1513905008094	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1513905014260	Marionette	INFO	Enabled via --marionette
+1513905026253	Marionette	INFO	Listening on port 36235
+1513905026429	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513905026734	Marionette	DEBUG	Register listener.js for window 2147483649
+1513905027195	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513905028206	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513905028210	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513905029236	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+1513905059376	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+1513905060870	Marionette	DEBUG	Received DOM event "beforeunload" for "https://web.whatsapp.com/"
+1513905061630	Marionette	DEBUG	Received DOM event "pagehide" for "https://web.whatsapp.com/"
+1513905061641	Marionette	DEBUG	Received DOM event "unload" for "https://web.whatsapp.com/"
+1513905062279	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+1513905072995	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+JavaScript error: , line 0: uncaught exception: No ServiceWorker controlling this client.
+JavaScript error: , line 0: uncaught exception: No ServiceWorker controlling this client.
+JavaScript error: , line 0: uncaught exception: No ServiceWorker controlling this client.
+JavaScript error: chrome://browser/content/browser.js, line 6702: TypeError: cannot use the given object as a weak map key
+JavaScript error: chrome://browser/content/browser.js, line 6702: TypeError: cannot use the given object as a weak map key
+[Child 2700, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-bfYN6l/firefox-57.0.1+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1513906147186	geckodriver	INFO	Listening on 127.0.0.1:35969
+1513906148174	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1513906150135	Marionette	INFO	Enabled via --marionette
+1513906155567	Marionette	INFO	Listening on port 37114
+1513906155688	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513906155996	Marionette	DEBUG	Register listener.js for window 2147483649
+1513906156103	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513906156822	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513906156824	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513906157321	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+1513906171326	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+1513906171636	Marionette	DEBUG	Received DOM event "beforeunload" for "https://web.whatsapp.com/"
+1513906172324	Marionette	DEBUG	Received DOM event "pagehide" for "https://web.whatsapp.com/"
+1513906172327	Marionette	DEBUG	Received DOM event "unload" for "https://web.whatsapp.com/"
+1513906172796	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+1513906179378	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+JavaScript error: , line 0: uncaught exception: No ServiceWorker controlling this client.
+JavaScript error: , line 0: uncaught exception: No ServiceWorker controlling this client.
+
+(/usr/lib/firefox/firefox:3968): Gdk-WARNING **: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1001.
+
+1513906230023	geckodriver	INFO	Listening on 127.0.0.1:56339
+1513906231023	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1513906235970	Marionette	INFO	Enabled via --marionette
+
+(firefox:4577): GConf-WARNING **: Client failed to connect to the D-BUS daemon:
+Failed to connect to socket /tmp/dbus-xkvBOHB31H: Connection refused
+
+(firefox:4577): LIBDBUSMENU-GLIB-WARNING **: Unable to get session bus: Could not connect: Connection refused
+
+(firefox:4577): GConf-WARNING **: Client failed to connect to the D-BUS daemon:
+Failed to connect to socket /tmp/dbus-kPBjFxPnIK: Connection refused
+
+(firefox:4577): GConf-WARNING **: Client failed to connect to the D-BUS daemon:
+Failed to connect to socket /tmp/dbus-yZVnj7i9Pu: Connection refused
+
+(firefox:4577): GConf-WARNING **: Client failed to connect to the D-BUS daemon:
+Failed to connect to socket /tmp/dbus-zwKxLrCUkq: Connection refused
+1513906264487	Marionette	INFO	Listening on port 41660
+1513906264695	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513906264998	Marionette	DEBUG	Register listener.js for window 2147483649
+1513906265204	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+
+(firefox:4577): GConf-WARNING **: Client failed to connect to the D-BUS daemon:
+Failed to connect to socket /tmp/dbus-dnwJf3d7Gs: Connection refused
+1513906268747	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513906268748	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513906269744	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+1513906283189	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+1513906283596	Marionette	DEBUG	Received DOM event "beforeunload" for "https://web.whatsapp.com/"
+1513906284502	Marionette	DEBUG	Received DOM event "pagehide" for "https://web.whatsapp.com/"
+1513906284505	Marionette	DEBUG	Received DOM event "unload" for "https://web.whatsapp.com/"
+
+(firefox:4577): GConf-WARNING **: Client failed to connect to the D-BUS daemon:
+Failed to connect to socket /tmp/dbus-EEMZEdPZT3: Connection refused
+1513906287947	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+JavaScript error: , line 0: uncaught exception: No ServiceWorker controlling this client.
+1513906295465	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+JavaScript error: , line 0: uncaught exception: No ServiceWorker controlling this client.
+1513906622546	geckodriver	INFO	Listening on 127.0.0.1:60541
+1513906623552	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1513906629742	Marionette	INFO	Enabled via --marionette
+
+(firefox:5251): GConf-WARNING **: Client failed to connect to the D-BUS daemon:
+Failed to connect to socket /tmp/dbus-HQdpNaBhaT: Connection refused
+
+(firefox:5251): LIBDBUSMENU-GLIB-WARNING **: Unable to get session bus: Could not connect: Connection refused
+
+(firefox:5251): GConf-WARNING **: Client failed to connect to the D-BUS daemon:
+Failed to connect to socket /tmp/dbus-DKii8UZGZG: Connection refused
+1513906651445	Marionette	INFO	Listening on port 43491
+1513906651635	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513906652037	Marionette	DEBUG	Register listener.js for window 2147483649
+1513906652160	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+
+(firefox:5251): GConf-WARNING **: Client failed to connect to the D-BUS daemon:
+Failed to connect to socket /tmp/dbus-yvDBoLPZHS: Connection refused
+1513906655770	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513906655771	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+
+(firefox:5251): GConf-WARNING **: Client failed to connect to the D-BUS daemon:
+Failed to connect to socket /tmp/dbus-1Aqc55F89t: Connection refused
+1513906659435	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+1513906674941	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+1513906675613	Marionette	DEBUG	Received DOM event "beforeunload" for "https://web.whatsapp.com/"
+1513906676307	Marionette	DEBUG	Received DOM event "pagehide" for "https://web.whatsapp.com/"
+1513906676314	Marionette	DEBUG	Received DOM event "unload" for "https://web.whatsapp.com/"
+1513906677054	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+
+(firefox:5251): GConf-WARNING **: Client failed to connect to the D-BUS daemon:
+Failed to connect to socket /tmp/dbus-YB9QV6TTJi: Connection refused
+1513906689463	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+JavaScript error: , line 0: uncaught exception: No ServiceWorker controlling this client.
+JavaScript error: , line 0: uncaught exception: No ServiceWorker controlling this client.
+1513909206132	geckodriver	INFO	Listening on 127.0.0.1:39765
+1513909207133	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1513909209580	Marionette	INFO	Enabled via --marionette
+1513909215892	Marionette	INFO	Listening on port 33655
+1513909216033	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513909216305	Marionette	DEBUG	Register listener.js for window 2147483649
+1513909216460	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513909217052	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513909217053	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513909217672	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+1513909232954	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+1513909233301	Marionette	DEBUG	Received DOM event "beforeunload" for "https://web.whatsapp.com/"
+1513909234047	Marionette	DEBUG	Received DOM event "pagehide" for "https://web.whatsapp.com/"
+1513909234050	Marionette	DEBUG	Received DOM event "unload" for "https://web.whatsapp.com/"
+1513909234434	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+1513909242556	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+JavaScript error: , line 0: uncaught exception: No ServiceWorker controlling this client.
+JavaScript error: , line 0: uncaught exception: No ServiceWorker controlling this client.
+
+(/usr/lib/firefox/firefox:7049): Gdk-WARNING **: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1001.
+
+1513911245301	geckodriver	INFO	Listening on 127.0.0.1:38089
+1513911246319	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1513911248230	Marionette	INFO	Enabled via --marionette
+1513911255749	Marionette	INFO	Listening on port 33708
+1513911255878	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513911256403	Marionette	DEBUG	Register listener.js for window 2147483649
+1513911256464	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513911257323	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513911257325	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513911257804	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+1513911269511	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+1513911270247	Marionette	DEBUG	Received DOM event "beforeunload" for "https://web.whatsapp.com/"
+1513911270991	Marionette	DEBUG	Received DOM event "pagehide" for "https://web.whatsapp.com/"
+1513911270994	Marionette	DEBUG	Received DOM event "unload" for "https://web.whatsapp.com/"
+1513911271527	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+1513911278507	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+JavaScript error: , line 0: uncaught exception: No ServiceWorker controlling this client.
+JavaScript error: , line 0: uncaught exception: No ServiceWorker controlling this client.
+1513911910735	geckodriver	INFO	Listening on 127.0.0.1:54977
+1513911911722	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1513911914439	Marionette	INFO	Enabled via --marionette
+1513911920777	Marionette	INFO	Listening on port 38299
+1513911920919	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513911921264	Marionette	DEBUG	Register listener.js for window 2147483649
+1513911921444	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513911922402	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513911922404	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513911923321	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+1513911951268	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+1513911952445	Marionette	DEBUG	Received DOM event "beforeunload" for "https://web.whatsapp.com/"
+1513911953512	Marionette	DEBUG	Received DOM event "pagehide" for "https://web.whatsapp.com/"
+1513911953520	Marionette	DEBUG	Received DOM event "unload" for "https://web.whatsapp.com/"
+1513911954325	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+1513911967574	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+JavaScript error: , line 0: uncaught exception: No ServiceWorker controlling this client.
+JavaScript error: , line 0: uncaught exception: No ServiceWorker controlling this client.
+
+(/usr/lib/firefox/firefox:9094): Gdk-WARNING **: /usr/lib/firefox/firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1001.
+
+1513913195848	geckodriver	INFO	Listening on 127.0.0.1:54282
+1513913196849	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+Failed to connect to Mir: Failed to connect to server socket: No such file or directory
+Unable to init server: Could not connect: Connection refused
+Error: cannot open display: :1001
+1513913333287	geckodriver	INFO	Listening on 127.0.0.1:54303
+1513913334242	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1513913337219	Marionette	INFO	Enabled via --marionette
+1513913344059	Marionette	INFO	Listening on port 44688
+1513913344205	Marionette	WARN	TLS certificate errors will be ignored for this session
+1513913344629	Marionette	DEBUG	Register listener.js for window 2147483649
+1513913344835	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1513913346311	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1513913346312	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1513913347523	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+1513913377364	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+1513913377863	Marionette	DEBUG	Received DOM event "beforeunload" for "https://web.whatsapp.com/"
+1513913378946	Marionette	DEBUG	Received DOM event "pagehide" for "https://web.whatsapp.com/"
+1513913378963	Marionette	DEBUG	Received DOM event "unload" for "https://web.whatsapp.com/"
+1513913379935	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://web.whatsapp.com/"
+1513913395999	Marionette	DEBUG	Received DOM event "pageshow" for "https://web.whatsapp.com/"
+JavaScript error: , line 0: uncaught exception: No ServiceWorker controlling this client.
+JavaScript error: , line 0: uncaught exception: No ServiceWorker controlling this client.
+
+(firefox:9911): Gdk-WARNING **: firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1005.
+
