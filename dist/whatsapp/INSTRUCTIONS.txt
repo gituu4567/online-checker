@@ -1,0 +1,7 @@
+1. fill victim.txt as one entry/line with their contact name (contact name need not to be exact or full)
+2. run getcookie.exe for only first time to get cookie of whatsapp
+3. run app.exe 
+4. Enjoy !!! constant beep is online ! two horns for someone getting online ! one horn for someone getting offline
+
+Note: if app.exe failed to login , cookie may have expire go to step 2
+ 

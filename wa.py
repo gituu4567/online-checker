@@ -3,6 +3,7 @@ import os
 import pickle
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
+import ipdb;ipdb.set_trace()
 
 class whatsapp:
 
@@ -23,13 +24,17 @@ class whatsapp:
 	    if os.name=="posix":
             	# Linux specific code here
             	webdriver = webdriver.Chrome('./driverlinux/chromedriver')
+                #webdriver = webdriver.Firefox()
+                #geckodriver must be in /usr/local/bin/ with chmod +x
+                webdriver.implicitly_wait(2)
+                #implicit wait --it causes missing parameter and url not opening in linux firefox
             else:
-            	# windows specific
+                # windows specific
             	webdriver = webdriver.Chrome('driver/chromedriver')  
                 # f*** these difference bw file finding while both are in same folder
-            	# webdriver = webdriver.Firefox('./driver')  # still it uses the geckodriver in root folder not the specified driver folder
-            
-            webdriver.implicitly_wait(0)  
+            	#webdriver = webdriver.Firefox('./driver')  # still it uses the geckodriver in root folder not the specified driver folder
+                webdriver.implicitly_wait(0)
+              
             # seconds # http://docs.seleniumhq.org/docs/04_webdriver_advanced.jsp#implicit-waits
             webdriver.get("https://web.whatsapp.com/")
             #webdriver.maximize_window()
@@ -52,9 +57,9 @@ class whatsapp:
             # clr field
             elem2.send_keys(t)  
             # send contact name to search box
-            elem2.send_keys(Keys.RETURN)  
+            elem2.send_keys(Keys.RETURN)
             # press Enter
-            elem3 = webdriver.find_element_by_xpath('//*[@id="main"]/header/div[2]/div[1]/h2/span')
+            elem3 = webdriver.find_element_by_xpath('//*[@id="main"]/header/div[2]/div[1]/div/span')
             if elem3.text.lower().find(t.lower()) > -1:  
             # finding contact name is same as input target
                 return True
@@ -92,7 +97,7 @@ class whatsapp:
     def verify(self,t):
         t =str(t)
         try:
-            elem1 = webdriver.find_element_by_xpath('//*[@id="main"]/header/div[2]/div[1]/h2/span')
+            elem1 = webdriver.find_element_by_xpath('//*[@id="main"]/header/div[2]/div[1]/div/span')
             if elem1.text.lower().find(t.lower()) > -1:
                 return True
             else:return False
@@ -116,7 +121,7 @@ class whatsapp:
                     if status == "click here for contact info":
                         continue
 
-                    elem3 = webdriver.find_element_by_xpath('//*[@id="main"]/header/div[2]/div[1]/h2/span')
+                    elem3 = webdriver.find_element_by_xpath('//*[@id="main"]/header/div[2]/div[1]/div/span')
                     if elem3.text.lower().replace(' ','').find(t.lower()) > -1:  
                     # finding contact name is same as input target
                         return elem3.text, status

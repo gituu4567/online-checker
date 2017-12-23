@@ -57,13 +57,13 @@ def gettargetcount():
 class gitdata(Thread):
     def run(self):
         os.system("git add database.txt")
-        os.system("git commit -m 'test2'")
-        os.system("git push")
+        if os.system("git commit -m 'test55'")==0:
+            os.system("git push")
 
-def run(self):
-    os.system("git add database.txt")
-    os.system("git commit -m 'test2'")
-    os.system("git push")             
+def run():
+        os.system("git add database.txt")
+        if os.system("git commit -m 'test5'")==0:
+            os.system("git push")          
 
 
 def start():
@@ -194,8 +194,10 @@ while True:
         endtime = time.time()
         timetaken = int(endtime - starttime)
         print "\n", 'database is updated in', timetaken, "/secs", 'for', len(targetnamelist), "Users"
+        
         #threading here
+
         #gitdata().start()
-        run()
+        #run()
 
   	break
