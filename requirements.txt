@@ -1,0 +1,2 @@
+selenium==3.8.0
+pygame==1.9.3
