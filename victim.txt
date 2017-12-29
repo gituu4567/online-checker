@@ -1,15 +1,10 @@
-<<<<<<< HEAD
 gp
-=======
-+919711965221
->>>>>>> 6a42939a70aac212657571ba2068d6d57bc0fa89
-anan
-saran
 mnisha
 knchn
-surya
-paru
-<<<<<<< HEAD
-praveen
-=======
->>>>>>> 6a42939a70aac212657571ba2068d6d57bc0fa89
+saran
+pravee
+test1
+test2
+test3
+lol1
+lol2
