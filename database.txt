@@ -1,8 +1,10 @@
-gp    ==hidden    ==online    ==0:00:00    ==0
-anan    ==hidden    ==online    ==0:00:00    ==0
-saran    ==hidden    ==offline    ==0:00:00    ==0
-mnisha    ==hidden    ==offline    ==0:00:00    ==0
-knchn    ==hidden    ==offline    ==0:00:00    ==0
-surya    ==hidden    ==offline    ==0:00:00    ==0
-paru    ==hidden    ==offline    ==0:00:00    ==0
-praveen    ==hidden    ==offline    ==0:00:00    ==0
+GP    ==last seen today at 21:39    ==offline    ==0:00:00    ==0
+Mnisha    ==last seen today at 18:43    ==offline    ==0:00:00    ==0
+Knchn    ==last seen today at 17:40    ==offline    ==0:00:00    ==0
+SaRan Jio    ==last seen today at 18:43    ==offline    ==0:00:00    ==0
+Praveen Neww    ==last seen today at 19:13    ==offline    ==0:00:00    ==0
+test1    ==unknown contact    ==offline    ==0:00:00    ==0
+test2    ==unknown contact    ==offline    ==0:00:00    ==0
+test3    ==unknown contact    ==offline    ==0:00:00    ==0
+lol1    ==unknown contact    ==offline    ==0:00:00    ==0
+lol2    ==unknown contact    ==offline    ==0:00:00    ==0
