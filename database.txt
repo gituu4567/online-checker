@@ -2,5 +2,5 @@ GP    ==last seen today at 16:05    ==offline    ==0:00:00    ==0
 Mnisha    ==last seen today at 16:48    ==offline    ==0:00:00    ==0
 Knchn    ==last seen today at 15:53    ==offline    ==0:00:00    ==0
 SaRan Jio    ==last seen today at 16:48    ==offline    ==0:00:00    ==0
-Praveen Neww    ==Sun Dec 31 16:49:18 2017    ==online    ==0:00:33    ==0
-Home Nattu    ==Sun Dec 31 16:49:18 2017    ==online    ==0:00:33    ==0
+Praveen Neww    ==Sun Dec 31 16:49:58 2017    ==online    ==0:00:42    ==0
+Home Nattu    ==Sun Dec 31 16:49:58 2017    ==online    ==0:00:42    ==0
