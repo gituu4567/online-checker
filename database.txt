@@ -1,10 +1,6 @@
-GP    ==last seen today at 21:39    ==offline    ==0:00:00    ==0
-Mnisha    ==last seen today at 18:43    ==offline    ==0:00:00    ==0
-Knchn    ==last seen today at 17:40    ==offline    ==0:00:00    ==0
-SaRan Jio    ==last seen today at 18:43    ==offline    ==0:00:00    ==0
-Praveen Neww    ==last seen today at 19:13    ==offline    ==0:00:00    ==0
-test1    ==unknown contact    ==offline    ==0:00:00    ==0
-test2    ==unknown contact    ==offline    ==0:00:00    ==0
-test3    ==unknown contact    ==offline    ==0:00:00    ==0
-lol1    ==unknown contact    ==offline    ==0:00:00    ==0
-lol2    ==unknown contact    ==offline    ==0:00:00    ==0
+GP    ==last seen today at 16:05    ==offline    ==0:00:00    ==0
+Mnisha    ==Sun Dec 31 16:47:42 2017    ==online    ==0:00:06    ==0
+Knchn    ==last seen today at 15:53    ==offline    ==0:00:00    ==0
+SaRan Jio    ==last seen today at 16:45    ==offline    ==0:00:00    ==0
+Praveen Neww    ==last seen today at 16:47    ==offline    ==0:00:00    ==0
+home    ==hidden    ==offline    ==0:00:00    ==0
