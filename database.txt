@@ -1,6 +1,6 @@
-gp    ==hidden    ==offline    ==0:00:00    ==0
-mnisha    ==hidden    ==offline    ==0:00:00    ==0
-knchn    ==unknown contact    ==offline    ==0:00:00    ==0
+GP    ==last seen today at 01:44    ==offline    ==0:00:00    ==0
+Mnisha    ==last seen today at 01:05    ==offline    ==0:00:00    ==0
+Knchn    ==last seen today at 02:13    ==offline    ==0:00:00    ==0
 SaRan Jio    ==last seen today at 00:01    ==offline    ==0:00:00    ==0
 Praveen Neww    ==last seen today at 01:39    ==offline    ==0:00:00    ==0
 home    ==hidden    ==offline    ==0:00:00    ==0
